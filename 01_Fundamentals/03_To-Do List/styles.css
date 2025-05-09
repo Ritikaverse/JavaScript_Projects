@@ -1,0 +1,35 @@
+body {
+  background: #352f5b; /* bg clr is this hex its a purple color */
+}
+
+.container {
+  max-width: 400px; /* its gonna be a central column of 400 pixels in the middle of our browser */
+}
+
+/* then we using two selectors to get input of type text when its out of focus and also when in-focus, in-focus means when we click on the field */
+input[type="text"],
+input[type="text"]:focus {
+  color: white; /* text is white */
+  border: none; /* no border */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* alpha channel rgba 0.2 for the transparency; the bg is transparent black */
+  max-width: 400px;
+}
+
+.todos li {
+  background: #423a6f; /* giving all li tags a background of this purple color */
+  border: none;
+  color: white;
+}
+
+.delete {
+  cursor: pointer; /* giving cursor of pointer so that we hover over them we get that little hand */
+}
+
+.todos li.filtered {
+  display: none !important;
+}

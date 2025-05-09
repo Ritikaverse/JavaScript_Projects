@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(46, 51, 42);
+      }
+
+      .search-form {
+        text-align: center;
+        margin: 100px auto;
+      }
+
+      label {
+        color: white;
+        font-size: xx-large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      input {
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        border: 2px solid whitesmoke;
+        padding: 15px;
+        font-size: large;
+        outline: none;
+        transition: 0.3s ease;
+      }
+
+      input:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 5px rgba(30, 144, 255, 0.4);
+      }
+
+      button {
+        border-radius: 20px;
+        height: 30px;
+        width: 80px;
+        color: white;
+        background-color: #999;
+      }
+
+      .result {
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .result p {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- input section -->
+    <form class="search-form">
+      <label for="artist-input">Enter Artist Name:</label>
+      <br /><br />
+      <input
+        id="artist-input"
+        type="text"
+        name="name"
+        placeholder="e.g. Weeknd"
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- result section -->
+    <div class="result"></div>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <title>Chai Quiz</title>
+  </head>
+  <body>
+    <!-- top section -->
+    <div class="topsection py-5 bg-white text-center border-bottom shadow-sm">
+      <div class="container">
+        <h2 class="display-5 text-danger fw-semibold">
+          “What’s Your Inner Chai Type?” ☕✨
+        </h2>
+      </div>
+    </div>
+
+    <!-- Result section -->
+    <div class="result text-center d-none my-5">
+      <h2 class="text-danger fw-bold">You’re…</h2>
+      <p class="chai-result mt-3"></p>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz my-5 mx-5 py-5 shadow rounded-4 bg-danger-subtle">
+      <div class="container">
+        <h2 class="text-danger mb-4">Your personality? Let's find out...</h2>
+
+        <form class="quiz-form text-danger">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              You’re at a café. What are you ordering?
+            </p>
+            <div class="form-check my-2">
+              <input type="radio" name="q1" value="A" />
+              <label class="form-check-label"
+                >Something strong enough to fix my life.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label"
+                >Iced chai latte with a book and trauma.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q1" value="C" />
+              <label class="form-check-label"
+                >Just give me my usual. You know it.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q1" value="D" />
+              <label class="form-check-label"
+                >Something light. I’m healing.</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              Pick your vibe on a Sunday morning:
+            </p>
+            <div class="form-check my-2">
+              <input type="radio" name="q2" value="A" />
+              <label class="form-check-label"
+                >Cleaning my room aggressively to loud music.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label"
+                >Windows open, lo-fi playing, soft hoodie on.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q2" value="C" />
+              <label class="form-check-label"
+                >Still awake from last night. Haven’t slept.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q2" value="D" />
+              <label class="form-check-label"
+                >Journaling and judging people in silence.</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">What’s your texting style?</p>
+            <div class="form-check my-2">
+              <input type="radio" name="q3" value="A" />
+              <label class="form-check-label"
+                >Writes essays with ✨emotions✨</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label"
+                >All lowercase, ironic, dry humour.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q3" value="C" />
+              <label class="form-check-label">seen at 11:52am</label>
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q3" value="D" />
+              <label class="form-check-label"
+                >“so anyway i overthought everything and now i’m here.”</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              Pick a red flag you’re lowkey proud of:
+            </p>
+            <div class="form-check my-2">
+              <input type="radio" name="q4" value="A" />
+              <label class="form-check-label"
+                >Oversharing like it’s my job.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">Healing but still petty.</label>
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q4" value="C" />
+              <label class="form-check-label"
+                >Cutting people off in 0.2 seconds.</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q4" value="D" />
+              <label class="form-check-label"
+                >Ignoring calls, but replying to memes.</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              If your life was a playlist, what would it be called?
+            </p>
+            <div class="form-check my-2">
+              <input type="radio" name="q5" value="A" />
+              <label class="form-check-label">Chaotic But Romantic</label>
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label"
+                >Unbothered but Overthinking</label
+              >
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q5" value="C" />
+              <label class="form-check-label">No Filter, Just Vibes</label>
+            </div>
+            <div class="form-check my-2">
+              <input type="radio" name="q5" value="D" />
+              <label class="form-check-label"
+                >Silently Falling Apart but Well-Dressed</label
+              >
+            </div>
+          </div>
+          <div class="text-center">
+            <input
+              type="submit"
+              class="btn text-danger rounded-pill btn-light"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="bg-danger-subtle text-center text-muted py-3 mt-5">
+      Made with <span class="text-danger">♥</span> by Ritika & a cup of
+      <span>☕</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
